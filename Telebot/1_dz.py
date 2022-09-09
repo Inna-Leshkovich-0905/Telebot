@@ -35,7 +35,7 @@ def callback_inline(call):
     keyboard = create_keyboard()
     if call.message:
         if call.data=="1":
-            img = open('9-17_.jpg','rb')
+            img = open('9-17.jpg','rb')
             bot.send_photo(
                 chat_id=call.message.chat.id,
                 photo=img,
@@ -43,7 +43,7 @@ def callback_inline(call):
                 reply_markup=keyboard)
             img.close() #закрытие картинки
         if call.data == "2":
-            img = open('darzoves2_.jpg', 'rb')
+            img = open('darzoves2.jpg', 'rb')
             bot.send_photo(
                 chat_id=call.message.chat.id,
                 photo=img,
@@ -51,7 +51,7 @@ def callback_inline(call):
                 reply_markup=keyboard)
             img.close()
         if call.data=="3":
-            img = open('Walk_.jpg','rb')
+            img = open('Walk.jpg','rb')
             bot.send_photo(
                 chat_id=call.message.chat.id,
                 photo=img,
@@ -59,7 +59,7 @@ def callback_inline(call):
                 reply_markup=keyboard)
             img.close()
         if call.data=="4":
-            img = open('Sleep_.jpg','rb')
+            img = open('Sleep.jpg','rb')
             bot.send_photo(
                 chat_id=call.message.chat.id,
                 photo=img,
@@ -67,7 +67,7 @@ def callback_inline(call):
                 reply_markup=keyboard)
             img.close()
         if call.data=="5":
-            img = open('Smile_.jpg','rb')
+            img = open('Smile.jpg','rb')
             bot.send_photo(
                 chat_id=call.message.chat.id,
                 photo=img,
@@ -77,3 +77,4 @@ def callback_inline(call):
 
 if __name__=="__main__": #запуск бота
     bot.polling(none_stop=True)
+
