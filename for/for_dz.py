@@ -1,0 +1,6 @@
+a = input('Введите трёхзначное число: ')
+b = int(a[0])
+c = int(a[1])
+d= int(a[2])
+print('Сумма чисел: ', b+c+d)
+print(type(a))
