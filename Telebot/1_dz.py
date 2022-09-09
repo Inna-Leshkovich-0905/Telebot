@@ -78,4 +78,3 @@ def callback_inline(call):
 
 if __name__=="__main__": #запуск бота
     bot.polling(none_stop=True)
-
